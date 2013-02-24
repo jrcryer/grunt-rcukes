@@ -64,7 +64,7 @@ exports.init = (grunt) ->
   #
   #
   command = ->
-    path.normalize config.bin
+    'cucumber'
 
   #
   # Returns the prefix to the cucumber command

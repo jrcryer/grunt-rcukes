@@ -14,7 +14,6 @@ module.exports = (grunt) ->
       test:
         features: 'features/'
       options:
-        bin: 'cucumber'
         prefix: 'bundle exec'
         format: 'pretty'
 
