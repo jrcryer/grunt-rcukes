@@ -13,12 +13,12 @@ module.exports = (grunt) ->
   builder = require('./lib/builder').init grunt
   cucumber = require('./lib/cucumber').init grunt
 
-  grunt.registerMultiTask 'cucumber', 'Run phpunit', ->
+  grunt.registerMultiTask 'cucumber', 'Run cucumber', ->
 
     command = builder.build this.data.features, this.options
     dir     = builder.directory()
 
-    grunt.verbose.writeln 'Starting phpunit (target: ' + this.target.cyan + ') in ' + dir.cyan
+    grunt.verbose.writeln 'Starting cucumber (target: ' + this.target.cyan + ') in ' + dir.cyan
     grunt.verbose.writeln 'Running: ' + command.cyan
 
 
