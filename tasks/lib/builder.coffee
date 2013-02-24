@@ -1,6 +1,6 @@
 #
 # grunt-rcukes
-# https://github.com/jrcryer/grunt-rcukes
+# http://www.jamescryer.com/grunt-rcukes
 #
 # Copyright (c) 2013 James Cryer
 # http://www.jamescryer.com

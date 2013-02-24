@@ -1,7 +1,7 @@
 {
   "name": "grunt-rcukes",
   "description": "Grunt plugin for running ruby cucumber.",
-  "homepage": "https://github.com/jrcryer/grunt-rcukes",
+  "homepage": "http://www.jamescryer.com/grunt-rcukes",
   "author": {
     "name": "James Cryer",
     "email": "chat@jamescryer.com",
