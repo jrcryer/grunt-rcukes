@@ -1,0 +1,28 @@
+{
+  "name": "grunt-rcukes",
+  "description": "Grunt plugin for running ruby cucumber.",
+  "homepage": "https://github.com/jrcryer/grunt-rcukes",
+  "author": {
+    "name": "James Cryer",
+    "email": "chat@jamescryer.com",
+    "url": "http://www.jamescryer.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jrcryer/grunt-rcukes.git"
+  },
+  "contributors": [],
+  "version": "0.0.1",
+  "main": "Gruntfile.coffee",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin",
+    "cucumber",
+    "ruby"
+  ]
+}
