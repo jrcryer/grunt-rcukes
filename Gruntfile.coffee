@@ -14,7 +14,6 @@ module.exports = (grunt) ->
       test:
         features: 'features/'
       options:
-        prefix: 'bundle exec'
         format: 'pretty'
 
   grunt.loadTasks 'tasks'

@@ -43,6 +43,15 @@ exports.init = (grunt) ->
     false
 
   #
+  # Returns tag
+  #
+  # @return tags
+  #
+  tags = ->
+    return '--tags ' + grunt.option('tags') unless grunt.option('tags') == undefined
+    false
+
+  #
   # Builds cucumber command
   #
   # @return string
@@ -56,6 +65,7 @@ exports.init = (grunt) ->
 
     options.push(profile()) if profile()
     options.push(format()) if format()
+    options.push(tags()) if tags()
 
     return options.join ' '
 
@@ -71,7 +81,7 @@ exports.init = (grunt) ->
   #
   #
   prefix = ->
-    return config.prefix unless config.prefix == false
+    return config.prefix unless config.prefix == undefined
     ''
 
   #
