@@ -15,6 +15,7 @@ module.exports = (grunt) ->
         features: 'features/'
       options:
         format: 'pretty'
+        tags:['@test', '~@test']
 
   grunt.loadTasks 'tasks'
 

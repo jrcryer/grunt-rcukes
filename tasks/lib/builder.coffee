@@ -48,7 +48,9 @@ exports.init = (grunt) ->
   # @return tags
   #
   tags = ->
-    return '--tags ' + grunt.option('tags') unless grunt.option('tags') == undefined
+    unless config.tags == undefined
+      return _.map config.tags, (value) ->
+        '--tags ' + value
     false
 
   #
@@ -65,7 +67,7 @@ exports.init = (grunt) ->
 
     options.push(profile()) if profile()
     options.push(format()) if format()
-    options.push(tags()) if tags()
+    _.each tags(), (tag) -> options.push(tag) if tags()
 
     return options.join ' '
 
