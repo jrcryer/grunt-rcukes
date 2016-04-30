@@ -106,4 +106,15 @@ exports.init = (grunt) ->
 
     return prefix() + ' ' + command() + ' ' + buildOptions() + ' ' + directory
 
+  #
+  # Returns the spawn options to be used for node child_process.exec
+  #
+  # @param Object options
+  #
+  exports.getSpawnOptions = (options) ->
+    spawnOptions = {}
+    spawnOptions = options.spawnOptions unless typeof options.spawnOptions == 'undefined'
+
+    return spawnOptions
+
   return exports
