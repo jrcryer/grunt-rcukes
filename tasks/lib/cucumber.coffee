@@ -16,11 +16,12 @@ exports.init = (grunt) ->
   # Runs cucumber command with callback
   #
   # @param String command
+  # @param String spawnOptions
   # @param Function callback
   #
-  exports.run = (command, callback) ->
+  exports.run = (command, spawnOptions, callback) ->
 
-    exec command, (err, stdout, stderr) ->
+    exec command, spawnOptions, (err, stdout, stderr) ->
       grunt.log.write(stdout) if stdout
       grunt.fatal(err) if err
       callback()

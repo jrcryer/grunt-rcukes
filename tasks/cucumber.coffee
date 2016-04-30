@@ -17,9 +17,10 @@ module.exports = (grunt) ->
 
     command = builder.build this.data.features, this.options
     dir     = builder.directory()
+    
+    spawnOptions = builder.getSpawnOptions this.options()
 
     grunt.verbose.writeln 'Starting cucumber (target: ' + this.target.cyan + ') in ' + dir.cyan
     grunt.verbose.writeln 'Running: ' + command.cyan
 
-
-    cucumber.run(command, this.async());
+    cucumber.run(command, spawnOptions, this.async());
