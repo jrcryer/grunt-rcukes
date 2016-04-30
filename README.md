@@ -68,9 +68,9 @@ Cucumber profile to use
 ####format
 Type: `String`
 
+Cucumber formatter
+
 #### spawnOptions
 Type: `Object`
 
 [Options](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback) to pass to nodeJS child process spawn 
-
-Cucumber formatter
